@@ -59,3 +59,60 @@ img {
 .soldout {
   color: rgb(173, 32, 32);
 }
+
+/* CATEGORY PAGE */
+
+.letters ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.categoryimg {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 700px) {
+  .categories {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  #apparelimg {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #accessoryimg {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #footwearimg {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #pcimg {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  #freeimg {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  #sgimg {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+}
