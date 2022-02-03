@@ -1,3 +1,8 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nanum+Myeongjo&family=Poppins:wght@200&family=ZCOOL+KuaiLe&family=Zen+Maru+Gothic:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nanum+Myeongjo&family=ZCOOL+KuaiLe&family=Zen+Maru+Gothic:wght@300&display=swap");
+
+/* ALL */
 body {
   background-color: whitesmoke;
 }
@@ -12,13 +17,12 @@ html {
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Serif Display", serif;
   padding-bottom: 2rem;
   padding-left: 2rem;
 }
 
 /* NAV */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,7 +36,7 @@ nav {
   letter-spacing: 5px;
   font-size: 22px;
   padding-left: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 
@@ -47,7 +51,7 @@ nav {
 
 .nav-links li {
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-right: 3rem;
 }
 
@@ -57,6 +61,10 @@ nav {
   letter-spacing: 1px;
 }
 
+.nav-links a:hover {
+  text-decoration: underline 1.5px;
+}
+
 /* PRODUCT PAGE */
 
 .productnav {
@@ -64,14 +72,21 @@ nav {
   justify-content: flex-start;
   gap: 2rem;
   padding-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.productnav a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.productnav li {
+  list-style: none;
 }
 
 .productname {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.productname {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Serif Display", serif;
   padding: 0;
 }
 
@@ -92,22 +107,27 @@ img {
 .productinfo {
   grid-column: 2/3;
   padding-left: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.color {
-  font-size: larger;
-  font-weight: 500;
+button {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  border: none;
+  margin-top: 0.8rem;
 }
 
-.soldout {
-  color: rgb(173, 32, 32);
+button:hover {
+  color: orange;
 }
 
 /* CATEGORY PAGE */
 
 .categorylist ol {
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   justify-content: space-around;
   padding-bottom: 2rem;
   list-style: none;
@@ -115,7 +135,7 @@ img {
 .categorylist a {
   color: black;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .categories {
@@ -124,11 +144,7 @@ img {
 }
 
 .categories h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 3rem;
-}
-
-.categories h2 {
+  font-family: "DM Serif Display", serif;
   padding-left: 3rem;
 }
 
@@ -142,6 +158,7 @@ img {
   padding-left: 1rem;
   line-height: 1.8rem;
   list-style: none;
+  font-size: 0.8rem;
 }
 
 .masterCategory li:hover {
@@ -151,7 +168,7 @@ img {
 .masterCategory a {
   color: black;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* PRODUCT LIST */
@@ -161,25 +178,38 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
   gap: 1.5rem;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.productlist h2 {
-  grid-column: 1/-1;
+.productlist img {
+  padding-bottom: 1rem;
+}
+
+.productlist a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.productlist a:hover {
+  text-decoration: underline;
 }
 
 .productlist article h3 {
   font-size: 1rem;
-  flex-grow: 3;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.1rem;
 }
 
 .productlist article > * {
   margin: 0;
-  font-size: 0.9rem;
 }
 
 .subtle {
   color: #4e4d4dcc;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
 }
 
 .productlist article {
@@ -226,52 +256,3 @@ img {
   background-color: orange;
   padding: 0.2rem;
 }
-
-/* @media screen and (min-width: 700px) {
-  .categories {
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-
-  .categories h2 {
-    padding-left: 0;
-  }
-
-  .masterCategory li {
-    padding-left: 0;
-  }
-
-  .masterCategory ol {
-    padding-left: 1rem;
-  }
-
-  #apparelimg {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  #accessoryimg {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  #footwearimg {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  #pcimg {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-
-  #freeimg {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  #sgimg {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-} */
