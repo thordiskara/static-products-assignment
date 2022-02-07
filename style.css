@@ -182,6 +182,14 @@ button:hover {
   font-family: "Poppins", sans-serif;
 }
 
+.productlist .listtype {
+  display: grid;
+  grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
 .productlist img {
   padding-bottom: 1rem;
 }
@@ -219,7 +227,7 @@ button:hover {
 }
 
 .productlist article.soldOut img {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .productlist article.soldOut::before {
@@ -231,14 +239,18 @@ button:hover {
   z-index: 10;
 }
 
-.productlist article .discounted,
-.productlist article .price span {
+.productlist article .discounted {
   display: none;
 }
 
 .productlist article.onSale .discounted {
   display: flex;
   justify-content: space-between;
+}
+
+.productlist article.onSale .price {
+  text-decoration: line-through;
+  color: rgb(130, 129, 129);
 }
 
 .discounted > p {
