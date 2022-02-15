@@ -9,141 +9,44 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <a href="index.html"> <h4>Logo</h4></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#">Categories</a></li>
-          <li><a href="productlist.html">Product List</a></li>
+      <nav class="navbar">
+        <a href="index.html" class="logo"> <h4>Logo</h4></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="productlist.html" class="nav-link">Product List</a>
+          </li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
     <main>
       <h2>Categories</h2>
-      <section class="categorylist">
-        <ol>
-          <li><a href="#apparelimg">Apparel</a></li>
-          <li>|</li>
-          <li><a href="#accessoryimg">Accessories</a></li>
-          <li>|</li>
-          <li><a href="#footwearimg">Footwear</a></li>
-          <li>|</li>
-          <li><a href="#pcimg">Personal Care</a></li>
-          <li>|</li>
-          <li><a href="#freeimg">Free Items</a></li>
-          <li>|</li>
-          <li><a href="#sgimg">Sporting Goods</a></li>
-        </ol>
-      </section>
-      <div class="categories">
-        <div class="categoryimg" id="apparelimg">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
-            alt="apparel"
-          />
+
+      <template id="categoryTemplate">
+        <div class="masterCategory">
+          <a href="productlist.html?categories"><h3>Apparel</h3></a>
         </div>
-        <section class="masterCategory">
-          <h3>Apparel</h3>
-          <ol>
-            <li><a href="productlist.html">Topwear</a></li>
-            <li><a href="productlist.html">Bottomwear</a></li>
-            <li><a href="productlist.html">Innerwear</a></li>
-            <li><a href="productlist.html">Saree</a></li>
-            <li><a href="productlist.html">Dresses</a></li>
-            <li><a href="productlist.html">Loungewear</a></li>
-            <li><a href="productlist.html">Apparel Set</a></li>
-          </ol>
-        </section>
-        <div class="categoryimg" id="accessoryimg">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
-            alt="accessories"
-          />
-        </div>
-        <section class="masterCategory">
-          <h3>Accessories</h3>
-          <ol>
-            <li><a href="productlist.html">Watches</a></li>
-            <li><a href="productlist.html">Socks</a></li>
-            <li><a href="productlist.html">Belts</a></li>
-            <li><a href="productlist.html">Bags</a></li>
-            <li><a href="productlist.html">Shoe Accessories</a></li>
-            <li><a href="productlist.html">Jewellery</a></li>
-            <li><a href="productlist.html">Eyewear</a></li>
-            <li><a href="productlist.html">Scarves</a></li>
-            <li><a href="productlist.html">Wallets</a></li>
-            <li><a href="productlist.html">Headwear</a></li>
-            <li><a href="productlist.html">Mufflers</a></li>
-            <li><a href="productlist.html">Belts</a></li>
-          </ol>
-        </section>
-        <div class="categoryimg" id="footwearimg">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1544.webp"
-            alt="footwear"
-          />
-        </div>
-        <section class="masterCategory">
-          <h3>Footwear</h3>
-          <ol>
-            <li><a href="productlist.html">Shoes</a></li>
-            <li><a href="productlist.html">Flip Flops</a></li>
-            <li><a href="productlist.html">Sandals</a></li>
-          </ol>
-        </section>
-        <div class="categoryimg" id="pcimg">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1577.webp"
-            alt="personal care"
-          />
-        </div>
-        <section class="masterCategory">
-          <h3>Personal Care</h3>
-          <ol>
-            <li><a href="productlist.html">Fragrances</a></li>
-            <li><a href="productlist.html">Lips</a></li>
-            <li><a href="productlist.html">Nails</a></li>
-            <li><a href="productlist.html">Skin Care</a></li>
-            <li><a href="productlist.html">Makeup</a></li>
-            <li><a href="productlist.html">Beauty Accessories</a></li>
-            <li><a href="productlist.html">Eyes</a></li>
-            <li><a href="productlist.html">Bath and Body</a></li>
-          </ol>
-        </section>
-        <div class="categoryimg" id="freeimg">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1551.webp"
-            alt="free items"
-          />
-        </div>
-        <section class="masterCategory">
-          <h3>Free Items</h3>
-          <ol>
-            <li><a href="productlist.html">Free Gifts</a></li>
-            <li><a href="productlist.html">Vouchers</a></li>
-          </ol>
-        </section>
-        <div class="categoryimg" id="sgimg">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1555.webp"
-            alt="sporting goods"
-          />
-        </div>
-        <section class="masterCategory">
-          <h3>Sporting Goods</h3>
-          <ol>
-            <li><a href="productlist.html">Artengo</a></li>
-            <li><a href="productlist.html">Artengo</a></li>
-            <li><a href="productlist.html">Artengo</a></li>
-          </ol>
-        </section>
-      </div>
+      </template>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        All data and images being used in this prototype is from:
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset.
+      </p>
+    </footer>
 
     <script src="main.js"></script>
+    <script src="category.js"></script>
   </body>
 </html>

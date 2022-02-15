@@ -9,16 +9,33 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <a href="index.html"> <h4>Logo</h4></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="category.html">Categories</a></li>
-          <li><a href="#">Product List</a></li>
+      <nav class="navbar">
+        <a href="index.html" class="logo"> <h4>Logo</h4></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Product List</a>
+          </li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
+
+    <ul class="pagelist">
+      <li><a href="index.html">Home</a></li>
+      <li>&#10095;</li>
+      <li><a href="category.html">Categories</a></li>
+      <li>&#10095;</li>
+      <li class="category1">specific category</li>
+    </ul>
 
     <main class="productlist">
       <h2 class="listtype">Topwear</h2>
@@ -38,55 +55,16 @@
           <a href="product.html?id=1531">View Product</a>
         </article>
       </template>
-
-      <!-- <article class="topProducts onSale">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp"
-          alt="Mean Team India Cricket Jersey"
-        />
-        <h3>Mean Team India Cricket Jersey</h3>
-        <p class="subtle">T-shirts</p>
-        <p class="price"><span>Prev.</span> DKK 2495,-</p>
-        <div class="discounted">
-          <p>Now DKK 1372,-</p>
-          <p>-45%</p>
-        </div>
-        <a href="product.html">View Product</a>
-      </article>
-
-      <article class="topProduct soldOut">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1531.webp"
-          alt="Grey Solid Round Neck T-Shirt"
-        />
-        <h3>Grey Solid Round Neck T-Shirt</h3>
-        <p class="subtle">T-shirts</p>
-        <p class="price"><span>Prev.</span> DKK 799,-</p>
-        <div class="discounted">
-          <p>Now DKK 799,-</p>
-          <p>-34%</p>
-        </div>
-        <a href="product.html">View Product</a>
-      </article>
-
-      <article class="smallProduct soldOut onSale">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1536.webp"
-          alt="Black Net Jersey"
-        />
-        <h3>Black Net Jersey</h3>
-        <p class="subtle">T-shirts</p>
-        <p class="price"><span>Prev.</span> DKK 1299,-</p>
-        <div class="discounted">
-          <p>Now DKK 935,-</p>
-          <p>-28%</p>
-        </div>
-        <a href="product.html">View Product</a>
-      </article> -->
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        All data and images being used in this prototype is from:
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset.
+      </p>
+    </footer>
 
     <script src="productlist.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

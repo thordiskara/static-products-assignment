@@ -25,8 +25,32 @@ function showProduct(product) {
   document.querySelector(
     ".productinfo .subtle"
   ).textContent = `${product.articletype} | ${product.brandname}`;
-  document.querySelector(".productinfo .price").textContent =
-    "DKK" + " " + `${product.price}` + ",-";
-  document.querySelector(".productinfo .discount").textContent =
-    product.discount;
+
+  if (product.soldout) {
+    document.querySelector(".productimg").classList.add("soldOut");
+  }
+
+  //PRICE SHIT
+
+  document.querySelector(".productpage .price").textContent =
+    "DKK " + `${product.price}` + ",-";
+
+  if (product.discount) {
+    document.querySelector(".productinfo").classList.add("onSale");
+  }
+
+  document.querySelector(".productpage .discounted p:last-child").textContent =
+    `${product.discount}` + "% OFF";
+
+  document.querySelector(".productpage .discounted p").textContent =
+    "DKK " +
+    Math.round(`${product.price - (product.price * product.discount) / 100}`) +
+    ",-";
+
+  //PRODUCT INFO
+  document.querySelector(".moreinfo .color").textContent = product.basecolour;
+  document.querySelector(".moreinfo .season").textContent = product.season;
+  document.querySelector(".moreinfo .subcat").textContent = product.subcategory;
+  document.querySelector(".moreinfo .productionyear").textContent =
+    product.productionyear;
 }

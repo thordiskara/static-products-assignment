@@ -9,58 +9,109 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <a href="index.html"> <h4>Logo</h4></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="category.html">Categories</a></li>
-          <li><a href="productlist.html">Product List</a></li>
+      <nav class="navbar">
+        <a href="index.html" class="logo"> <h4>Logo</h4></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="productlist.html" class="nav-link">Product List</a>
+          </li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="productpage">
       <ul class="productnav">
+        <li><a href="index.html"> Home</a></li>
+        <li>&#10095;</li>
+        <li><a href="category.html">Categories</a></li>
+        <li>&#10095;</li>
         <li class="topwear"><a href="productlist.html">Product List</a></li>
-        <li>></li>
+        <li>&#10095;</li>
         <li class="productname">Product Name</li>
       </ul>
-      <div class="currentproduct">
-        <div class="productimg">
-          <img
-            class="productimage"
-            src="https://kea-alt-del.dk/t7/images/webp/640/1536.webp"
-            alt="product"
-          />
-        </div>
-        <section class="productinfo">
-          <h2 class="productname">Black Net Jersey</h2>
-          <p class="subtle">T-shirts</p>
-          <p class="price"><span>Prev.</span> DKK 1299,-</p>
-          <div class="discount">
-            <p>Now DKK 935,-</p>
+      <div class="productview">
+        <article class="currentproduct">
+          <div class="productimg">
+            <img
+              class="productimage"
+              src="https://kea-alt-del.dk/t7/images/webp/640/1536.webp"
+              alt="product"
+            />
           </div>
-          <form>
-            <label
-              >Choose a size
-              <select name="size">
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-                <option>XL</option>
-              </select>
-            </label>
-            <div>
-              <button>Add to basket</button>
-            </div>
-          </form>
-        </section>
+          <section class="allproductinfo">
+            <section class="productinfo">
+              <h2 class="productname">Black Net Jersey</h2>
+              <p class="subtle">T-shirts</p>
+              <p class="price">DKK 1299,-</p>
+              <div class="discounted">
+                <p>Now DKK 1899,-</p>
+                <p>-34%</p>
+              </div>
+              <form>
+                <label
+                  >Choose a size
+                  <select name="size">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                  </select>
+                </label>
+                <br />
+                <label
+                  >Quantity
+                  <select name="size">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </label>
+                <div>
+                  <button>Add to basket</button>
+                </div>
+              </form>
+            </section>
+            <section class="moreinfo">
+              <h2>Product Info</h2>
+              <p class="bold">Color</p>
+              <p class="color">Color</p>
+              <p class="bold">Season</p>
+              <p class="season">winter</p>
+              <p class="bold">Subcategory</p>
+              <p class="subcat">Info missing</p>
+              <p class="bold">Year of production</p>
+              <p class="productionyear">Info missing</p>
+            </section>
+          </section>
+        </article>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        All data and images being used in this prototype is from:
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset.
+      </p>
+    </footer>
 
     <script src="product.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

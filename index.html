@@ -9,25 +9,36 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <a href="#"> <h4>Logo</h4></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="category.html">Categories</a></li>
-          <li><a href="productlist.html">Product List</a></li>
+      <nav class="navbar">
+        <a href="#" class="logo"> <h4>Logo</h4></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="productlist.html" class="nav-link">Product List</a>
+          </li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
     <main>
       <h1>Webshop</h1>
-      <li><a href="category.html">Categories</a></li>
-      <li><a href="productlist.html">Product List</a></li>
-      <li><a href="product.html">Product</a></li>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        All data and images being used in this prototype is from:
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset.
+      </p>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

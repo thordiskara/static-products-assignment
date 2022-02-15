@@ -1,4 +1,8 @@
-const url = "https://kea-alt-del.dk/t7/api/products?limit=12";
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+const url =
+  "https://kea-alt-del.dk/t7/api/products?limit=12&category=" + category;
 
 //res means response
 fetch(url)
@@ -37,11 +41,8 @@ function showProduct(product) {
   copy.querySelector(".price").textContent =
     "DKK" + " " + `${product.price}` + ",-";
 
-  copy.querySelector(".price").textContent =
-    "DKK" + " " + `${product.price}` + ",-";
-
   copy.querySelector(".discounted p:last-child").textContent =
-    `${product.discount}` + "%";
+    `${product.discount}` + "% OFF";
 
   //soldOut onSale
   if (product.soldout) {
@@ -62,3 +63,8 @@ function showProduct(product) {
   //append it
   parent.appendChild(copy);
 }
+
+// fetch the data
+
+document.querySelector(".category1").textContent = category;
+document.querySelector(".listtype").textContent = category;
